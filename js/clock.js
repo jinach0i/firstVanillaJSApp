@@ -3,10 +3,10 @@ const clock=document.querySelector('h2#clock');
 function getClock() {
     // console.log('hello');
     const date=new Date(),
-        hours=date.getHours().padStart,
-        min=date.getMinutes().padStart,
-        sec=date.getSeconds().padStart;
-    clock.innerText=`${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+        hours=string(date.getHours().padStart(2,"0")),
+        min=string(date.getMinutes().padStart(2,"0")),
+        sec=string(date.getSeconds().padStart(2,"0"));
+    clock.innerText=`${hours}:${min}:${sec}`;
 }
 getClock();
 // 초마다 새 Date obj를 생성하라:
