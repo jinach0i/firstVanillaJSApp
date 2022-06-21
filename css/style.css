@@ -1,13 +1,16 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 body{background: lightpink url('https://picsum.photos/1920/1080?random=1') no-repeat 100% 100%/100% 100%; width: 100vw; height: 100vh;}
-#wrap{width: 100vw; height: 100vh; padding: 10%;}
-h2#clock{text-align: center; background-image: linear-gradient(45deg, skyblue, transparent); transform: translateY(30vh); height: 20vh; line-height: 20vh; font-size: 3.5rem;}
+#wrap{width: 100vw; height: 100vh;}
+h2#clock{text-align: center; background-image: linear-gradient(45deg, skyblue, transparent); transform: translateY(30vh); height: 20vh; line-height: 20vh; font-size: 6rem;}
 
-@media screen and (max-height: 653px) {
-    h2#clock{font-size: 3rem; height: 15vh; line-height: 15vh;}
-
+@media screen and (max-width: 280px) {
+    h2#clock{font-size: 3.5rem;}
+    
+}
+@media screen and (min-width: 281px) and (max-width: 414px) {
+    h2#clock{font-size: 4.5rem; height: 15vh; line-height: 15vh;}
 }
 
-@media screen and (min-height: 1024px) {
-    h2#clock{font-size: 4rem;}
+@media screen and (min-height: 914px){
+    h2#clock{font-size: 5rem;}
 }
