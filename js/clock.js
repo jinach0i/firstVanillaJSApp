@@ -3,9 +3,9 @@ const clock=document.querySelector('h2#clock');
 function getClock() {
     // console.log('hello');
     const date=new Date(),
-        hours=string(date.getHours().padStart(2,"0")),
-        min=string(date.getMinutes().padStart(2,"0")),
-        sec=string(date.getSeconds().padStart(2,"0"));
+        hours=String(date.getHours()).padStart(2,"0"),
+        min=String(date.getMinutes()).padStart(2,"0"),
+        sec=String(date.getSeconds()).padStart(2,"0");
     clock.innerText=`${hours}:${min}:${sec}`;
 }
 getClock();
