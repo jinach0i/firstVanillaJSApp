@@ -1,7 +1,10 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 body{background: lightpink url('https://picsum.photos/1920/1080?random=1') no-repeat 100% 100%/100% 100%; width: 100vw; height: 100vh;}
 #wrap{width: 100vw; height: 100vh;}
-h2#clock{text-align: center; background-image: linear-gradient(45deg, skyblue, transparent); transform: translateY(30vh); height: 20vh; line-height: 20vh; font-size: 6rem;}
+h2#clock{text-align: center; background-image: linear-gradient(45deg, aliceblue, transparent); transform: translateY(30vh); height: 20vh; line-height: 20vh; font-size: 6rem;}
+#weather{text-align: right; margin-top: 5%;}
+#weather span{color: azure; background: rgba(0, 0, 0, .4); display: inline-block; text-align: center; height: 60px; line-height: 60px; padding: 0 2%;}
+#weather span:last-child{font-weight: bold; margin-right: 5%;}
 
 @media screen and (max-width: 280px) {
     h2#clock{font-size: 3.5rem;}
